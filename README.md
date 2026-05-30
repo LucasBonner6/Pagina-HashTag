@@ -4,13 +4,12 @@ Um clone de alta fidelidade visual e totalmente responsivo da página inicial da
 
 ## 📸 Interface do Projeto
 
-![Preview da Home Hashtag](./imagens/BACKROUN-banner-01.webp)
-_(Dica: Você pode salvar o print `image_149624.jpg` da tela cheia na sua pasta de imagens para usá-lo como preview oficial aqui!)_
+![Preview da Home Hashtag](./imagens/preview.png)
 
 ## 🔗 Demonstração Online
 
 O projeto foi publicado utilizando o GitHub Pages e pode ser acessado diretamente pelo link abaixo:
-👉 [Acessar o Clone da Hashtag ao vivo](https://lucasbonner6.github.io/ClonePaginaHashtag/)
+👉 [Acessar o Clone da Hashtag ao vivo](https://lucasbonner6.github.io/Pagina-HashTag/)
 
 ## 🛠️ Tecnologias Utilizadas
 
