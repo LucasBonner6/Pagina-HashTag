@@ -1,0 +1,136 @@
+@media all and (max-width: 30em) {
+  /* Sessão conteudos gratuitos */
+  .container-conteudos {
+    & .img-conteudos {
+      width: 100%;
+    }
+
+    .caixas-curso-hashtag {
+      flex-flow: column;
+      align-self: center;
+
+      & .circulo-logo-curso {
+        width: 6rem;
+        height: 6rem;
+        pad: 1.28rem;
+      }
+
+      & .lista-treinamentos:link,
+      .lista-treinamentos:visited {
+        padding: 0.42rem 4.88rem;
+      }
+    }
+  }
+  /* Sessão Depoimentos */
+
+  .container-depoimentos {
+    margin: 0 5.6rem;
+
+    & .depoimentos-titulo {
+      flex-flow: column;
+      max-width: none;
+    }
+
+    & .depoimentos-carrossel-imagens {
+      & .seta-carrossel {
+        width: 5rem;
+      }
+
+      & .container-depoimentos-imgs {
+        & .depoimentos-carrossel-img {
+          min-width: 100%;
+        }
+      }
+    }
+  }
+
+  /* Sessão Na Mídia */
+
+  & .container-namidia {
+    flex-flow: row wrap;
+    justify-content: center;
+
+    & .namidia-titulo {
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    & .namidia-links {
+      & a {
+        height: 3.86rem;
+      }
+    }
+  }
+
+  /* Sessão Blog da Hashtag */
+
+  .sessao-blog {
+    padding-top: 7.63rem;
+
+    & .container-blog {
+      padding: 2.5rem;
+      padding-top: 7.63rem;
+
+      & .caixa-blog-h2 {
+        width: 78.125vw;
+        text-align: center;
+      }
+    }
+  }
+
+  /* Sessão Como Ajudar */
+
+  .sessao-sec-laranja,
+  .sessao-sec-cinza {
+    padding: 4.88rem 2rem;
+
+    & .caixa-comoajudar-h2 {
+      text-align: center;
+    }
+  }
+
+  /* Sessão Mini Curso */
+
+  .container-minicurso {
+    & h2 {
+      text-align: center;
+    }
+
+    & .form-minicurso {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      max-width: 350px;
+      align-self: center;
+      width: 100%;
+    }
+  }
+
+  /* Rodapé */
+  .container-rodape {
+    grid-template-columns: 1fr;
+    max-width: 40rem;
+    gap: 4rem;
+
+    & .logo-footer {
+      grid-row: 1;
+      width: 14rem;
+    }
+
+    & .rodape-coluna {
+      grid-row: 2;
+      align-items: center;
+
+      & .subsecao-rodape,
+      & .subsecao-cursosonline,
+      & .subsecao-assistente,
+      & .rodape-div-iconelink {
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    & .rodape-container-copyright {
+      grid-column: auto;
+      grid-row: 4;
+    }
+  }
+}

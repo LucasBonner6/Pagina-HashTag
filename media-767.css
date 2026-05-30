@@ -1,0 +1,291 @@
+@media all and (max-width: 47.9375em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  /* Global */
+
+  .sessao {
+    padding: 4.88rem 2rem;
+  }
+
+  .nav-aberto {
+    overflow: hidden;
+
+    & .cabecalho {
+      & nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.85);
+        align-items: center;
+        justify-content: center;
+        padding: 5rem;
+        backdrop-filter: blur(1.5rem);
+
+        & ul {
+          flex-flow: column;
+          align-items: center;
+          max-height: 100%;
+          overflow: auto;
+          padding: 0 5rem;
+        }
+
+        & .item-lista-cabecalho {
+          &.aberto {
+            display: flex;
+            flex-flow: column;
+            gap: 2.5rem;
+            align-items: center;
+
+            & ul {
+              display: flex;
+              position: static;
+              box-shadow: none;
+              gap: 1.02rem;
+              align-items: start;
+              list-style: disc;
+              background-color: transparent;
+
+              & li {
+                border-bottom: none;
+                padding: 0;
+              }
+            }
+
+            &::after {
+              content: none;
+            }
+          }
+        }
+      }
+
+      & .nav-icones {
+        z-index: 999;
+
+        & .nav-icone {
+          &.nav-icone--close {
+            display: block;
+          }
+
+          &.nav-icone--menu {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  /* Cabeçalho */
+  .cabecalho {
+    & img {
+      width: 10rem;
+    }
+
+    & nav {
+      display: none;
+    }
+
+    & .nav-icones {
+      display: block;
+
+      & .nav-icone {
+        width: 4rem;
+        color: #112e61;
+
+        &.nav-icone--close {
+          display: none;
+        }
+      }
+    }
+  }
+
+  /* Navegação */
+
+  nav {
+    overflow: hidden;
+  }
+
+  /* Sessão Banner */
+
+  .sessao-banner {
+    background-image: url(imagens/banner-hero-mobile.webp);
+
+    & .container-banner {
+      flex-flow: column;
+      max-width: 83rem;
+
+      & .coluna-conjunto {
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+
+      & h1,
+      & .subtitulo-h1 {
+        text-align: center;
+      }
+    }
+  }
+
+  /* Sessão conteudos gratuitos */
+
+  .sessao-conteudos {
+    background-image: url(imagens/banner-treinamentos-mobile.webp);
+    background-position-y: bottom;
+    background-size: auto;
+    background-color: white;
+    padding-bottom: 1rem;
+
+    & .container-conteudos {
+      flex-flow: column;
+      gap: 3.32rem;
+
+      & .img-conteudos {
+        left: 0;
+        max-width: 47.8rem;
+      }
+
+      & .conteudos-coluna {
+        order: -1;
+
+        & .conteudos-titulo {
+          align-self: center;
+          max-width: 42.5rem;
+        }
+      }
+
+      & .caixas-curso-hashtag {
+        justify-content: center;
+      }
+    }
+  }
+
+  /* Sessão Diferenciais */
+
+  .sessao-diferenciais {
+    & .container-diferenciais {
+      & .caixa-titulo-diferenciais {
+        flex-flow: column;
+        text-align: center;
+        align-items: center;
+        gap: 2.5rem;
+        padding-bottom: 14.9rem;
+
+        & .paragrafo-diferenciais {
+          text-align: inherit;
+        }
+
+        & .caixa-diferenciais-h2 {
+          border-bottom: solid 0.3rem #ffb20f;
+          border-left: none;
+          text-align: center;
+        }
+      }
+      & .caixa-restante-diferenciais {
+        & .bloco-itens-diferenciais {
+          flex-flow: column;
+          gap: 7.63rem;
+        }
+
+        & .diferenciais-empresas {
+          & .titulo-empresas {
+            text-align: center;
+          }
+
+          & .bloco-imagens-diferenciais {
+            padding: 0 3.12rem;
+          }
+        }
+      }
+    }
+  }
+
+  /* Sessão Depoimentos */
+
+  & .container-depoimentos {
+    & .depoimentos-titulo {
+      max-width: 40rem;
+      text-align: center;
+    }
+
+    & .depoimentos-carrossel-imagens {
+      gap: 1.82vw;
+      position: relative;
+
+      & .seta-carrossel {
+        width: 5.6vw;
+
+        &.seta-direita {
+          transform: translate(125%, -40%);
+        }
+        &.seta-esquerda {
+          transform: translate(-115%, -40%);
+        }
+      }
+
+      & .container-depoimentos-imgs {
+        width: 100%;
+        display: flex;
+        align-self: stretch;
+        gap: 1.82vw;
+        overflow: hidden;
+
+        & .depoimentos-carrossel-img {
+          gap: 1.82vw;
+          min-width: calc(calc(100% - 1.82vw) / 2);
+        }
+      }
+    }
+  }
+
+  /* Sessão Na Mídia */
+
+  & .container-namidia {
+    & .namidia-titulo {
+      min-width: 35.71rem;
+    }
+
+    & .namidia-links {
+      flex-flow: row wrap;
+      justify-content: end;
+      gap: 1rem;
+
+      & a {
+        height: 2.86rem;
+
+        & img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  /* Sessão Blog da Hashtag */
+  .container-blog {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    padding: 3.12rem;
+    padding-top: 6.1rem;
+    max-width: 78.57rem;
+  }
+
+  /* Rodapé */
+
+  .container-rodape {
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+
+    & .rodape-coluna {
+      grid-column: 1;
+      grid-row: 1 / span 3;
+      width: auto;
+    }
+
+    & .rodape-container-copyright {
+      grid-row: 3;
+    }
+  }
+}
